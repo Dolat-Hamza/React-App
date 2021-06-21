@@ -1,25 +1,27 @@
 import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello World From Hamza!!
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React from PanaCloud Bootcamp
-        </a>
-      </header>
-    </div>
-  );
+import './index.css';
+function App({ name, age }) {
+	return (
+		<div>
+			<p className = "p">
+				Hello World From <strong> {name}</strong>
+			</p>
+			<h1 className = "heading"> This is me practicing on the panacloud training</h1>
+			<ol className = "order">
+				<li className="list" >Hello World</li>
+				<li className="list">Hello World</li>
+        <li className="list">Hello World</li>
+        <li className="list">Hello World</li>
+        <li className="list">Hello World</li>
+        <li className="list">Hello World</li>
+        <li className="list">Hello World</li>
+        </ol>
+        <h1 className = "heading"> My Age is {age} </h1>
+        <h2 className = "heading"> The sum of 20+2.5 is {20+2.5}</h2>
+		
+		</div>
+	);
 }
 
 export default App;
